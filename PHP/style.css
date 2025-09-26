@@ -1,0 +1,161 @@
+body:not(.resume-body) { 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("Starr.jpg") no-repeat center center / cover;
+    font-family: Arial, sans-serif;
+} 
+
+.login-container {
+    color: white;
+    background: rgba(58, 55, 55, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border: 3px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(195, 131, 230), 0 0 30px rgba(175, 80, 234, 0.36);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;;
+    font-size: 30px;
+}
+
+.login-container input {
+    color: white;
+    background: rgba(132, 125, 125, 0.2);
+    border: none;
+    width: 75%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px;
+}
+
+.login-container button {
+    width: 25%;
+    padding: 10px;
+    background: #c660dd;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #522B5B;
+    box-shadow: #b03b9d 0px 5px 15px #ff99ee;
+}
+
+.profile-header h1 {
+    font-size: 2.2rem;
+    margin: 10px 0 5px;
+    color: #ffffff; /* Force pure white */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* General resume body */
+.resume-body {
+    font-family: Arial, sans-serif;
+    background: url(resumebg.jpg) no-repeat center center / cover;/* black */
+    color: #fff; /* white text */
+    margin: 0;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Profile header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid purple;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #b3a1d1; /* soft purple */
+}
+
+/* Cards/sections */
+.resume-card {
+    background-color: #1a1a1a;
+    border-left: 5px solid purple;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+}
+
+.resume-card h2 {
+    margin-top: 0;
+    color: purple;
+}
+
+.resume-card ul {
+    padding-left: 20px;
+}
+
+.resume-card p, 
+.resume-card li {
+    line-height: 1.6;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-box {
+    background: purple;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-box:hover {
+    background: #b650a5;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(182, 80, 165, 0.6);
+    cursor: pointer;
+}
+
+/* Hidden state before scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* Active state when visible */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
